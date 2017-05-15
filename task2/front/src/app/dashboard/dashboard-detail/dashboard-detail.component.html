@@ -1,0 +1,30 @@
+<div class="wrapper">
+  <div class="container">
+    <div class="detail">
+      <ul class="detail__list">
+        <li class="detail__item">
+          номер гарнітури <span class="detail__important">{{ furniture?.numberHeadset }}</span>
+        </li>
+        <li class="detail__item">
+          назва <span class="detail__important">{{ furniture?.name }}</span>
+        </li>
+        <li class="detail__item">
+          тип меблів <span class="detail__important">{{ furniture?.typeFurniture }}</span>
+        </li>
+        <li class="detail__item">
+          Кількість пердметів <span class="detail__important">{{ furniture?.countItems }}</span>
+        </li>
+        <li class="detail__item">
+          Ціна <span class="detail__important">{{ furniture?.prise }}</span>
+        </li>
+        <li class="detail__item">
+          Кількість на складі <span class="detail__important">{{ furniture?.countStorage }}</span>
+        </li>
+        <li class="detail__item">
+          дата закупки <span class="detail__important">{{ furniture?.dateBuy | date:'medium'  }}</span>
+        </li>
+      </ul>
+    </div>
+    <button (click)="goBack()">назад</button>
+  </div>
+</div>

@@ -1,0 +1,10 @@
+<h3>фурнітури з бази даних</h3>
+<div class="grid grid-pad">
+  <div *ngFor="let furniture of furnitures" (click)="gotoDetail(furniture)" class="col-1-4">
+    <div class="module hero">
+      <h4>{{furniture.name}}</h4>
+      <span>Ціна:{{furniture.prise}}</span>
+    </div>
+  </div>
+</div>
+<div class="maxPrise">Максимальна ціна {{maxFurniture?.prise}}</div>

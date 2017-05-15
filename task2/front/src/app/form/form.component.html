@@ -1,0 +1,13 @@
+<div class="container">
+  <form class="form-signin" [formGroup]="data" (ngSubmit)="onSubmit()"  novalidate>
+    <h2 class="form-signin-heading">Заповінь поля</h2>
+    <input class="form-control" type="text" name="numberHeadset" placeholder="Номер гарнітури" required="" autofocus="" formControlName="numberHeadset"/>
+    <input class="form-control" type="text" name="name" placeholder="Назва" required="" formControlName="name"/>
+    <input class="form-control" type="text" name="typeFurniture" placeholder="Тим меблів" required="" formControlName="typeFurniture"/>
+    <input class="form-control" type="text" name="countItems" placeholder="Кількісь предметів" required="" formControlName="countItems"/>
+    <input class="form-control" type="text" name="prise" placeholder="ціна" required="" formControlName="prise"/>
+    <input class="form-control" type="text" name="countStorage" placeholder="кількість на складі" required="" formControlName="countStorage"/>
+    <input class="form-control" type="date" name="dateBuy" placeholder="дата закупівлі" required="" formControlName="dateBuy"/>
+    <button class="btn btn-lg btn-primary btn-block" [disabled]="data.invalid || data.pristine">Відправити</button>
+  </form>
+</div>

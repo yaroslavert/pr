@@ -1,0 +1,17 @@
+<div class="container">
+    <h2>
+        У рядку символів визначити кількість кожного з символів. Вилучити повторні символи.
+    </h2>
+    <div class="word">
+        слово 
+        <span class="word__name">
+            {{word}}
+        </span>
+        <input [(ngModel)]="word" (ngModelChange)="create()">
+    </div>
+    <div class="desription">
+        <div class="desription__row" *ngFor="let mas of letters | keys">
+            Буква  <span class="desription__leter">{{mas.leter}}</span> кількість раз <span class="desription__number">{{ mas.value }}</span>
+        </div>
+    </div>
+</div>

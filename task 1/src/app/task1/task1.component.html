@@ -1,0 +1,41 @@
+<div class="container">
+    <h2>
+        Задана дійсна матриця розміру N*M всі елементи якої різні. В кожному рядку вибираємо елемент з найменьшим значеням потім серед цих чисел вибираємо найбільше. Вказати індекси елементу із знайденим значенням.
+    </h2>
+    <div class="table">
+        <div class="table__row" *ngFor="let mas of masiv">
+            <div class="table__col" *ngFor="let ms of mas">
+                {{ms}}
+            </div>
+        </div>
+    </div>
+
+    <div class="desription">
+        <div class="desription__title">
+             В кожному рядку вибираємо елемент з найменьшим значеням
+        </div>
+        <div class="desription__rows">
+            <div class="desription__row" *ngFor="let mas of masiv; let i = index">
+              Рядок {{i+1}} найменьше значення {{masivMinRow[i].value}}
+        </div>
+        </div>
+    </div>    
+    <div class="desription">
+        <div class="desription__title">
+            Потім серед цих чисе вибираємо найбільше
+        </div>
+        <div class="desription__row res">
+            {{ getMaxMasiv(masivMinRow) }}
+        </div>
+    </div>
+
+    <div class="desription">
+        <div class="desription__title">
+            Вказати індекси елементу із знайденим значенням.
+        </div>
+        <div class="desription__row res">
+            {{ IndexMaxInMinRow }}
+        </div>
+    </div>
+
+</div>

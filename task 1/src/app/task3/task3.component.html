@@ -1,0 +1,34 @@
+<div class="container">
+    <h2>
+        В одномірному масиві С[1..20] знайти суму і кількість елементів, які менші 5 і індекс яких кратний 4.
+    </h2>
+    <div class="smTable">
+        <div class="smTable__col" *ngFor="let mas of masiv">
+            {{mas}}
+        </div>    
+    </div>
+    <h2>
+        які менші 5 і індекс яких кратний 4.
+    </h2>
+    <div class="smTable">
+        <div class="smTable__col" *ngFor="let mas of newMasiv">
+            {{mas}}
+        </div>    
+    </div>
+    <div class="desription">
+        <div class="desription__title">
+            Cума
+        </div>
+        <div class="desription__row res">
+            {{sum}}
+        </div>
+    </div>
+    <div class="desription">
+        <div class="desription__title">
+            Кількість
+        </div>
+        <div class="desription__row res">
+            {{count}}
+        </div>
+    </div>
+</div>

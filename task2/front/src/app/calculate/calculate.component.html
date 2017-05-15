@@ -1,0 +1,13 @@
+<h4>Пошук по типу меблів</h4>
+<p>pro або st</p>
+<input type="text" #in (keyup)="search(in.value)">
+ціна {{Prise}}
+<div>
+    <div *ngFor="let furniture of furnitures"
+        class="search-result">
+        <a [routerLink]="['/dashboard/'+furniture.id]">
+          {{furniture?.name}} ціна {{furniture?.prise * furniture?.countStorage}}
+        </a>
+    </div>
+    <p *ngIf="!furnitures?.length && firstSearch">нічо не знайдено</p>
+  </div>

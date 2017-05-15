@@ -1,0 +1,21 @@
+.nav{
+    background: #009688;
+    padding: 20px 0;
+    
+}
+.list{
+    display: flex;
+    justify-content: space-between;
+}
+.list__link{
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-size: 20px;
+    padding: 10px;
+    background: rgb(0, 0, 0);
+}
+.list__link.active{
+    background: rgba(255, 248, 0, 0.41);
+}
